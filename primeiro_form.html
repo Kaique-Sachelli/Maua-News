@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Primeiro Formulário</title>
+</head>
+
+<body>
+    <form>
+        <!-- Entrada de dados texto -->
+        <h2>Dados pessoais</h2>
+        <label for="nome"> Primeiro Nome: </label>
+        <input type="text" id="nome">
+
+        <label for="sobrenome"> Sobrenome: </label>
+        <input type="text" id="sobrenome">
+
+
+        <p>
+            <!-- Email -->
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email">
+
+            <!-- Telefone -->
+            <label for="tel"> Telefone: </label>
+            <input type="tel" id="tel">
+        </p>
+
+        <h2>Dados extras</h2>
+        
+        <!-- Entrada de dados color -->
+        <p>
+            <label for="cor"> Qual sua cor preferida? </label>
+            <input type="color" id="cor">
+        </p>
+
+
+        <!-- Caixa de texto -->
+        <p>
+            <label for="msg"> Deixe sua mensagem </label>
+            <textarea id="msg" cols="40" rows="6"></textarea>
+        </p>
+
+
+        <!-- Entrada de arquivos -->
+        <p>
+            <label for="arquivo"> Escolha o arquivo</label>
+            <input type="file" id="arquivo">
+        </p>
+
+
+
+        <!-- Opções -->
+        <h3>Selecione seu genero</h3>
+        <select id="estado">
+            <option>Masculino </option>
+            <option>Femenino</option>
+            <option>Marico</option>
+            <option>Lesbiana</option>
+            <option>Otaku</option>
+            <option>Asexual</option>
+            <option>Pokemon</option>
+        </select>
+
+
+        <!-- Caixinha de escolha bolinha -->
+        <h3>Qual seu genero:</h3>
+        
+        <fieldset>
+            <legend>Escolha um carro para passear?</legend>
+            <input id="HRV" type="radio" name="carros"> <label id="HRV">HRV</label>
+            <input id="H1" type="radio" name="carros"> <label id="H1">H1</label>
+            <input id="Onix" type="radio" name="carros"> <label id="Onix">Onix</label>
+            <input id="A3" type="radio" name="carros"> <label id="A3">A3</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual seu lanche favorito?</legend>
+            <input type="checkbox" name="lanches" id="bauru">
+            <label for="bauru">Bauru</label>
+            <input type="checkbox" name="lanches" id="misto-quente">
+            <label for="misto-quente">misto-quente</label>
+            <input type="checkbox" name="lanches" id="x-tudo">
+            <label for="x-tudo">x-tudo</label>
+            <input type="checkbox" name="lanches" id="Buraco-quente">
+            <label for="Buraco-quente">Buraco-quente</label>
+        </fieldset>
+
+
+        <!-- Botão de enviar -->
+        <p><input type="submit" value="Enviar"></p>
+
+
+    </form>
+</body>
+
+</html>
